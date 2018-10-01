@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+    $(function () {
+        var root='motor/8A/';
+        var arrayImg = ['8A-1.jpg','8A-2.jpg'];
+        $.loadMain("portofolio",root,arrayImg);
+
+        var paramImg = ['param.png','diagram1.png','diagram2.png','install.png'];
+        $.loadParam("container",root,paramImg);
+    });
+
+</script>
+<!-- CONTENT 
+================================================== -->
+    <div class="sectiontitle">
+        <h4>8A系列</h4>
+    </div>
+    <div id="portofolio">
+    </div>
+    <br><br>
+    <div id="container" class="six columns" style="clear: both;">
+        <h5 class="active">详细说明</h5>
+        <p>*双极性恒流斩波驱动技术</p>
+        <p>*24--80VAC供电</p>
+        <p>*十六档细分设置,最大256细分,满足各种机械传动</p>
+        <p>*八档输出相电流设置，自动半流功能</p>
+        <p>*高速力矩输出提高40%,避免丢步(空载启动速度达300--420r/min),最高转速达5000r/min</p>
+        <p>*指令信号兼容3.5--24V,无需串联电阻</p>
+        <p>*电机低速无爬行现象，噪音小，无共振区</p>
+    </div>

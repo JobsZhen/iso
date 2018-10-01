@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+    var map = {};
+    map['mixed'] = {'ISO9001认证咨询':'28','ISO9001标准动态':'35','ISO9001问题解答':'39','ISO9001相关标准':'42','ISO9001行业动态':'57','ISO9001案例精选':'60HB','85/86系列':'85HB86HB','110系列':'110HB'};
+    map['sl'] = {'35系列':'35','39系列':'39','42系列':'42'};
+    map['motor'] = {'2A系列':'2A','3A系列':'3A','8A系列':'8A'};
+    map['gear'] = {'42HB行星齿轮箱电机':'42','57HB行星齿轮箱电机':'57A','57HB偏心齿轮箱电机':'57B'};
+    map['less'] = {'42BL':'42BL','42BY':'42BY','57BLY':'57BLY2','57BLY行星齿轮箱':'57BLY','57BL':'57BL','86BL':'86BL'};
+    map['bmd'] = {'BLDC5020':'C5020'};
+    map['pms'] = {'10BY系列及15BY系列':'10BY15BY','20BY系列':'20BY','25BY系列':'25BY','35BY系列':'35BY'};
+    $(function () {
+        var seriesList=map[series];
+        let i=0;
+        $.each(seriesList,function(index,value){
+            var dd="";
+            if(i==0){
+                dd=`<dd id="`+value+`" class="active"><a href="#simple1">`+index+`</a></dd>`;
+            }else{
+                dd=`<dd id="`+value+`"><a href="#simple1">`+index+`</a></dd>`;
+            }
+            $("#series").append(dd);
+            i++;
+        });
+        $("#series").on("click","dd",function(){
+            var id=$(this).attr("id");
+            let root="product/"+series+"/"+id+"/";     //页面所在的根目录
+            $.ajax({
+                url : url+root+id+'detail.html',
+                dataType: 'html',
+                success : function(data) {
+                    $("#detail").html(data);
+                }
+            });
+        });
+
+        $("#series").find('dd:first').trigger("click");
+    });
+</script>
+<!-- CONTENT 
+================================================== -->
+<div class="row" style="width: 1200px;">
+    <dl class="tabs" id="series">
+        <!--<dd id="35" class="active"><a href="#simple1">35系列</a></dd>
+        <dd id="39"><a href="#simple1">39系列</a></dd>
+        <dd id="42"><a href="#simple1">42系列</a></dd>-->
+    </dl>
+ <div class="row" style="width: 1200px;" id="detail">
+
+
+ </div>
+</div>

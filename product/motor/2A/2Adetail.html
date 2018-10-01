@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+    $(function () {
+        var root='motor/2A/';
+        var arrayImg = ['2A-1.jpg','2A-2.jpg','2A-3.jpg','2A-4.jpg'];
+        $.loadMain("portofolio",root,arrayImg);
+
+        var paramImg = ['param.png','diagram.png','install.png'];
+        $.loadParam("container",root,paramImg);
+    });
+
+</script>
+<!-- CONTENT 
+================================================== -->
+    <div class="sectiontitle">
+        <h4>2A系列</h4>
+    </div>
+    <div id="portofolio">
+    </div>
+    <br><br>
+    <div id="container" class="six columns" style="clear: both;">
+        <h5 class="active">详细说明</h5>
+        <p>*先进的双极性怀流斩波驱动技术</p>
+        <p>*DC12--36V供电(最佳供电18V--32V)</p>
+        <p>*八档输出电流设置,自动半流功能,八档细分设置,最大128细分,满足各种机械传动</p>
+        <p>*光电隔离信号输入/输出</p>
+        <p> *有过压、欠压、过流、相间短路保护功能</p>
+        <p>*具备脱机功能，适配42机座及以下机座电机</p>
+    </div>
