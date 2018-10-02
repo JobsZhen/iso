@@ -56,7 +56,7 @@
 					<a href="#" id="productInfo">ISO认证</a>
 						<ul id="product—ul">
 							<li id="ISO9001"><a href="#">ISO9001质量管理体系</a></li>
-							<li id="ISO14001"><a href="#" >ISO14001</a></li>
+							<li id="ISO14001"><a href="#" >ISO14001环境管理体系</a></li>
 							<li id="ISO45001"><a href="#">ISO45001</a></li>
 						</ul>
 					</li>
@@ -101,23 +101,23 @@
 				<div class="ei-title">
 				</div>
 			</li>
-			<li>
-				<img src="img/3.jpg" alt="image03" class="responsiveslide">
+			<!--<li>
+				<img src="img/4.jpg" alt="image03" class="responsiveslide">
 				<div class="ei-title">
 				</div>
 			</li>
 			<li>
-				<img src="img/5.jpg" alt="image05" class="responsiveslide">
+				<img src="img/6.jpg" alt="image05" class="responsiveslide">
 				<div class="ei-title">
 				</div>
-			</li>
+			</li>-->
 		</ul>
 		<ul class="ei-slider-thumbs" style="display: none">
 			<li class="ei-slider-element"  style="display: none">Current</li>
 			<li  style="display: none"><a href="#">Slide 1</a><img src="img/1.jpg" class="slideshowthumb" alt="thumb01"/></li>
 			<li  style="display: none"><a href="#">Slide 2</a><img src="img/2.jpg" class="slideshowthumb" alt="thumb02"/></li>
-			<li  style="display: none"><a href="#">Slide 3</a><img src="img/3.jpg" class="slideshowthumb" alt="thumb03"/></li>
-			<li  style="display: none"><a href="#">Slide 4</a><img src="img/5.jpg" class="slideshowthumb" alt="thumb04"/></li>
+			<!--<li  style="display: none"><a href="#">Slide 3</a><img src="img/4.jpg" class="slideshowthumb" alt="thumb03"/></li>-->
+			<!--<li  style="display: none"><a href="#">Slide 4</a><img src="img/6.jpg" class="slideshowthumb" alt="thumb04"/></li>-->
 		</ul>
 	</div>
 	<div class="minipause">
@@ -131,6 +131,24 @@
 			<p>
 				深圳中衡认证服务有限公司是严格按照国家行政许可制度，经深圳市工商行政管理局批准2011年注册成立的专业从事现代企业管理研究和各类国际标准认证咨询的顾问机构。批准获得ISO9000、ISO14000、0HSAS18000、ISO22000、QC080000、IATF16949、ISO13485、ISO20000、ISO27001…等国际标准认证咨询资格后。公司业务包括认证咨询、企业管理咨询、企业管理培训、企业营销售策划。
 			</p>
+			<p>
+				公司成立以来，秉承“专业、高效、诚信、务实”的服务宗旨，致力于将先进的管理科学转化为企业第一生产力。 为数千家企事业单位成功地进行了 ISO国际标准认证咨询服务。服务地区覆盖 广东、广西、海南、浙江、江苏、北京等多个省市；咨询范围包括政府机关（如财政、税务、城管等）、医疗卫生机构、银行、保险、学校、电子、建筑装饰、物业管理、房地产、消防、建设监理、机械、运输、仓储、服装、食品、餐饮连锁、酒店等。
+			</p>
+			<p>
+				公司拥有一批来自国内、外从事过各行各业咨询、辅导 ,具有丰富实践经验和咨询技能的获国家注册高级咨询师、咨询师资格的教授、专家及食品行业工程技术专家，负责项目选址、设计、设备选型、工艺设计、水、电辅助设施指导。他们有丰富的食品、餐饮加工企业的选址、建厂经验，熟悉国内外食品企业GMP的要求及国内外食品加工机械设备。在为各行业客户提供专业的管理技术和一流服务的同时，各项服务工作严格按照公司内部规定的流程作业，对咨询师按《咨询师守则》进行严格管理。公司还建立了客户回访制度，通过专职人员对咨询师的工作质量进行监控，以咨询师的工作质量保证咨询服务的整体质量。
+			</p>
+		<p>中衡认证服务的成长与发展，是与1千多家客户长期以来的支持与信任分不开的。正是因为客户的不同时期的需求带动了中衡认证服务业务的拓展和成熟。我们提供的咨询培训认证服务归类如下：</p>
+			<p>——ISO9001质量管理体系</p>
+			<p>——ISO14001环境管理体系</p>
+			<p>——OHSAS18001职业健康安全管理体系</p>
+			<p>——IATF16949汽车质量体系</p>
+			<p>——QC080000有害物质管理体系</p>
+			<p>——ISO22000食品安全管理体系</p>
+			<p>——ISO13485医疗器械质量管理体系</p>
+			<p>——SA8000社会责任管理体系</p>
+			<p>——ISO27001信息安全管理体系</p>
+			<p>——ISO20000信息服务ITSM管理体系</p>
+
 
 		</div>
 
@@ -197,7 +215,7 @@
 <script type="text/javascript">
     //这里是控制项目的根目录，线索部署要改成   http://www.szfyht-motor.com/
     //本地就改成你本地的路径   http://localhost:63343/first/
-    var url='http://localhost:63342/iso/';
+    var url='http://59.110.227.126/iso/';
     var series="";
     $(function () {
         $("#contact").click(function (e) {
@@ -220,38 +238,12 @@
             });
         });
 
-
-
         jQuery.loadMain =function(container,root,arrayImg){
-            var div='<div class=\"three columns category castles\" style=\"float:left\"><div class=\"portofoliothumb\"><img src=\"5\" class=\"fourimage\"/></div></div>';
-            $.each(arrayImg,function(index,value){
-                $("#"+container).append(div.replace(new RegExp("5","g"),"product/"+root+value));
-            });
+
         }
 
         jQuery.loadParam =function(container,root,arrayImg){
-            var div='<br> <h5 class="active">4</h5><img src="5" alt="" style="width: 1000px;">';
 
-            var electrical='<br> <h5 class="active">4</h5><img src="5" alt="" style="width: 1000px;"><p>*以上型号只为代表产品,可根据客户要求对轴径/线长/铣扁位/及电参数作订制</p>';
-
-            $.each(arrayImg,function(index,value){
-                var title="";
-                if(value.indexOf("electrical")>=0){
-                    title="技术参数";
-                    $("#"+container).append(electrical.replace(new RegExp("4","g"),title).replace(new RegExp("5","g"), "product/"+root+value));
-                    return;
-                }else if(value.indexOf("Outline")>=0){
-                    // var num=value.replace(new RegExp("Outline.jpg","g"),"").replace(new RegExp("Outline.png","g"),"");
-                    title="外形图";
-                }else if(value.indexOf("diagram")>=0){
-                    title="接线图";
-                }else if(value.indexOf("nut")>=0){
-                    title="螺母尺寸图";
-                }else if(value.indexOf("install")>=0){
-                    title="安装尺寸";
-                }
-                $("#"+container).append(div.replace(new RegExp("4","g"),title).replace(new RegExp("5","g"), "product/"+root+value));
-            });
         }
 
     });
